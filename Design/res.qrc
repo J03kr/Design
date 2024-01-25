@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/close .png</file>
+        <file>res/setting.png</file>
+        <file>res/backgroud.webp</file>
+        <file>res/imagin.jpg</file>
+        <file>res/add.png</file>
+        <file>res/max.png</file>
+        <file>res/min.png</file>
+        <file>res/search.png</file>
+    </qresource>
+</RCC>
