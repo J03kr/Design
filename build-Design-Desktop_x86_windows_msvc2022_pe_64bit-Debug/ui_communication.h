@@ -32,6 +32,7 @@ public:
     QPushButton *m_max;
     QPushButton *m_close;
     QLabel *label;
+    QPushButton *m_setting;
     QWidget *background3;
     QGridLayout *gridLayout;
     QTextBrowser *m_com;
@@ -54,7 +55,9 @@ public:
 "QWidget#m_search{border-image:url(:/res/search.png);}\n"
 "QWidget#m_close{border-image:url(:/res/close .png);}\n"
 "QWidget#m_max{border-image:url(:/res/max.png);}\n"
-"QWidget#m_min{border-image:url(:/res/min.png);}"));
+"QWidget#m_min{border-image:url(:/res/min.png);}\n"
+"QWidget#m_setting{border-image:url(:/res/setting.png);}\n"
+""));
         background1 = new QWidget(Communication);
         background1->setObjectName("background1");
         background1->setGeometry(QRect(0, 130, 370, 670));
@@ -85,6 +88,9 @@ public:
         QFont font;
         font.setPointSize(14);
         label->setFont(font);
+        m_setting = new QPushButton(m_title);
+        m_setting->setObjectName("m_setting");
+        m_setting->setGeometry(QRect(790, 0, 40, 40));
         background3 = new QWidget(Communication);
         background3->setObjectName("background3");
         background3->setGeometry(QRect(370, 80, 950, 550));
@@ -147,6 +153,7 @@ public:
         m_max->setText(QString());
         m_close->setText(QString());
         label->setText(QCoreApplication::translate("Communication", "\351\200\232\350\256\257\345\257\271\350\261\241", nullptr));
+        m_setting->setText(QString());
         m_send->setText(QCoreApplication::translate("Communication", "\345\217\221\351\200\201", nullptr));
         m_search->setText(QString());
         m_add->setText(QString());

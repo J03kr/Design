@@ -49,3 +49,9 @@ void Communication::on_m_search_clicked()
 
 }
 
+
+void Communication::on_m_setting_clicked()
+{
+    m_s.show();
+}
+

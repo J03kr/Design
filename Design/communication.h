@@ -2,6 +2,7 @@
 #define COMMUNICATION_H
 
 #include <QWidget>
+#include "setting.h"
 
 namespace Ui {
 class Communication;
@@ -26,8 +27,11 @@ private slots:
 
     void on_m_search_clicked();
 
+    void on_m_setting_clicked();
+
 private:
     Ui::Communication *ui;
+    Setting m_s;
     int pressnum = 0;
 };
 
