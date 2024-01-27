@@ -1,53 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>Setting</class>
- <widget class="QWidget" name="Setting">
+ <widget class="QDialog" name="Setting">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>335</width>
-    <height>369</height>
+    <width>299</width>
+    <height>345</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Dialog</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="1">
-    <widget class="QLabel" name="label">
-     <property name="text">
-      <string>服务器IP：</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="2" colspan="2">
-    <widget class="QComboBox" name="m_localhost"/>
-   </item>
-   <item row="3" column="3">
-    <widget class="QPushButton" name="m_no">
+   <item row="3" column="1" colspan="2">
+    <widget class="QPushButton" name="m_yes">
      <property name="maximumSize">
       <size>
-       <width>90</width>
+       <width>80</width>
        <height>30</height>
       </size>
      </property>
      <property name="text">
-      <string>取消</string>
+      <string>确定</string>
      </property>
     </widget>
    </item>
-   <item row="2" column="1">
-    <widget class="QLabel" name="label_3">
-     <property name="text">
-      <string>本地IP:</string>
+   <item row="0" column="1">
+    <widget class="QLabel" name="label">
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
      </property>
-    </widget>
-   </item>
-   <item row="1" column="1">
-    <widget class="QLabel" name="label_2">
      <property name="text">
-      <string>端口号：</string>
+      <string>服务器IP：</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
    </item>
@@ -64,26 +53,27 @@
      </property>
     </spacer>
    </item>
-   <item row="0" column="2" colspan="2">
-    <widget class="QLineEdit" name="m_server"/>
-   </item>
-   <item row="1" column="2" colspan="2">
-    <widget class="QLineEdit" name="m_port"/>
-   </item>
-   <item row="3" column="1" colspan="2">
-    <widget class="QPushButton" name="m_yes">
-     <property name="maximumSize">
-      <size>
-       <width>90</width>
-       <height>30</height>
-      </size>
+   <item row="1" column="1">
+    <widget class="QLabel" name="label_2">
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
      </property>
      <property name="text">
-      <string>确定</string>
+      <string>端口：</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
    </item>
-   <item row="1" column="4">
+   <item row="3" column="4">
+    <widget class="QPushButton" name="m_no">
+     <property name="text">
+      <string>取消</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="5">
     <spacer name="horizontalSpacer_2">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
@@ -95,6 +85,49 @@
       </size>
      </property>
     </spacer>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLabel" name="label_3">
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>本地IP：</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3">
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="3" colspan="2">
+    <widget class="QComboBox" name="m_localhost"/>
+   </item>
+   <item row="1" column="3" colspan="2">
+    <widget class="QLineEdit" name="m_port">
+     <property name="text">
+      <string>8899</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3" colspan="2">
+    <widget class="QLineEdit" name="m_server">
+     <property name="text">
+      <string>192.168.2.123</string>
+     </property>
+    </widget>
    </item>
   </layout>
  </widget>
